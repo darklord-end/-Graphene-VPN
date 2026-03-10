@@ -2,8 +2,11 @@ name: Graphene VPN Sync
 
 on:
   schedule:
-    - cron: '0 */6 * * *' 
+    - cron: '*/45 * * * *' # Обновляем каждые 45 минут, как договаривались
   workflow_dispatch: 
+
+permissions:
+  contents: write # Даем боту права на пуш в репозиторий
 
 jobs:
   build:
@@ -21,7 +24,9 @@ jobs:
         run: pip install requests
 
       - name: Run Graphene Engine
-        # Запускаем из корня, но указываем путь к файлу в папке source
+        env:
+          # ВАЖНО: Прокидываем секрет из настроек GitHub в скрипт
+          PREMIUM_KEY: ${{ secrets.PREMIUM_KEY }}
         run: python source/main.py
 
       - name: Push Changes
@@ -31,5 +36,10 @@ jobs:
           git config --global user.name "GrapheneBot"
           git config --global user.email "bot@graphene.vpn"
           git add .
-          git diff-index --quiet HEAD || git commit -m "🚀 Graphene VPN: Safe Update"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+          # Проверяем изменения, чтобы не было ошибки при пустом коммите
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "🚀 Graphene VPN: Safe Update [$(date +'%H:%M')]"
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+          else
+            echo "No changes to commit"
+          fi
