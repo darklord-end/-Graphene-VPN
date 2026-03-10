@@ -41,7 +41,7 @@ def log(message: str):
         LOGS_BY_FILE[idx].append(message)
 
 # Получение текущего времени по часовому поясу Европа/Москва
-zone = zoneinfo.ZoneInfo("Europe/Moscow")
+zone = zoneinfo.ZoneInfo("Asia/Barnaul")
 thistime = datetime.now(zone)
 offset = thistime.strftime("%H:%M | %d.%m.%Y")
 
@@ -251,6 +251,18 @@ def save_mobile_version(all_configs):
         f.writelines(mobile_list)
     print("📱 Мобильная версия Graphene создана (25 серверов)")
 
+# Предположим, all_configs — это твой список очищенных строк
+all_configs = process_configs(raw_data) 
+
+# Сохраняем полный список (26.txt)
+with open("githubmirror/26.txt", "w", encoding="utf-8") as f:
+    f.writelines(all_configs)
+
+# СОЗДАЕМ MOBILE.TXT (первые 20 серверов)
+with open("githubmirror/mobile.txt", "w", encoding="utf-8") as f:
+    f.write("Profile-Title: 🛡️ GRAPHENE MOBILE\n\n")
+    f.writelines(all_configs[:20]) # Берем только первые 20 штук
+
 def _traffic_counts(traffic) -> tuple[int, int]:
     """Извлекает count/uniques из разных форматов ответа GitHub API."""
     if traffic is None:
@@ -292,6 +304,30 @@ def _traffic_counts(traffic) -> tuple[int, int]:
         return _sum_traffic_items(traffic)
 
     return 0, 0
+
+def process_configs(raw_configs):
+    cleaned = []
+    for line in raw_configs:
+        if not line.strip(): continue
+        
+        # Если в строке есть конфиг (vless, vmess и т.д.)
+        if "://" in line:
+            # Разделяем ссылку и описание по знаку #
+            if "#" in line:
+                url_part, desc_part = line.split("#", 1)
+                
+                # ЧИСТКА: Убираем мусор из описания
+                desc_part = re.sub(r'\[openproxylist\.com\]', '', desc_part)
+                desc_part = re.sub(r'🛡️\s?Graphene\s?\|', '', desc_part)
+                desc_part = re.sub(r'raw\.githubusercontent\.com\S*', '', desc_part) # Убираем raw.github
+                
+                # Формируем чистое название
+                new_line = f"{url_part.strip()}#🛡️ GRAPHENE | {desc_part.strip()}\n"
+                cleaned.append(new_line)
+            else:
+                # Если знака # нет, просто добавляем название в конец
+                cleaned.append(f"{line.strip()}#🛡️ GRAPHENE\n")
+    return cleaned
 
 def _sum_traffic_items(items) -> tuple[int, int]:
     total_count = 0
