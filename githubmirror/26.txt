@@ -1,4 +1,5 @@
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20VPN%20%7C%20%D0%9F%D0%9B%D0%90%D0%9D%3A%20FREE
+vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20%D0%A1%D0%A2%D0%A3%D0%A2%D0%A1%3A%20LIFETIME
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20%D0%9F%D0%9E%D0%94%D0%94%D0%95%D0%A0%D0%96%D0%9A%D0%90%3A%20%40Graphene_Bot
 ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@57.128.214.100:12000#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20Free
 vless://71322f86-f37a-4929-ada0-05e6a2688145@de2.pineappled.org:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&security=reality&sid=23&sni=www.apple.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20Free
