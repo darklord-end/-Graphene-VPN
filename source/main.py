@@ -67,11 +67,32 @@ try:
 except Exception as e:
     log(f"⚠️ Не удалось проверить лимиты GitHub API: {e}")
 
+import re
+
+def clean_and_brand(config_line):
+    if '#' in config_line:
+        # Разделяем на ссылку и описание
+        parts = config_line.split('#', 1)
+        url = parts[0]
+        desc = parts[1]
+
+        # 1. Удаляем упоминание openproxylist и старый бренд (если есть)
+        desc = re.sub(r'\[openproxylist\.com\]', '', desc)
+        desc = re.sub(r'🛡️\s?Graphene\s?\|', '', desc)
+        desc = re.sub(r'Website=.*', '', desc) # Чистим хвосты
+        
+        # 2. Убираем лишние пробелы
+        desc = desc.strip()
+        
+        # 3. Собираем обратно с твоим брендом
+        return f"{url}#🛡️ GRAPHENE VPN | {desc}\n"
+    return config_line
+
 if not os.path.exists("githubmirror"):
     os.mkdir("githubmirror")
 
 URLS = [
-    "https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY.txt"
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"
 ]
 
 # Источники для 26-го файла (без SNI проверки, только дедупликация)
@@ -216,6 +237,19 @@ def extract_source_name(url: str) -> str:
         return parsed.netloc
     except:
         return "Источник"
+
+def save_mobile_version(all_configs):
+    # Берем с 1 по 25 сервер (самые свежие)
+    mobile_list = all_configs[:25]
+    
+    with open("githubmirror/mobile.txt", "w", encoding="utf-8") as f:
+        # Правильный заголовок для мобильных приложений
+        f.write("Profile-Title: 🛡️ GRAPHENE VPN\n")
+        f.write("Subscription-Userinfo: upload=0; download=0; total=107374182400; expire=1798761600\n")
+        f.write("Profile-Update-Interval: 6\n\n")
+        
+        f.writelines(mobile_list)
+    print("📱 Мобильная версия Graphene создана (25 серверов)")
 
 def _traffic_counts(traffic) -> tuple[int, int]:
     """Извлекает count/uniques из разных форматов ответа GitHub API."""
