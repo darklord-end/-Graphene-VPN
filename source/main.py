@@ -24,6 +24,35 @@ _UPDATED_FILES_LOCK = threading.Lock()
 _GITHUBMIRROR_INDEX_RE = re.compile(r"githubmirror/(\d+)\.txt")
 updated_files = set()
 
+def process_configs(raw_configs):
+    cleaned = []
+    for line in raw_configs:
+        line = line.strip()
+        if not line or "://" not in line: 
+            continue
+        
+        # Если в строке есть конфиг
+        if "#" in line:
+            url_part, desc_part = line.split("#", 1)
+            
+            # 1. Убираем мусор: openproxylist, старые бренды, ссылки raw.github
+            desc_part = re.sub(r'\[openproxylist\.com\]', '', desc_part, flags=re.IGNORECASE)
+            desc_part = re.sub(r'🛡️\s?Graphene\s?\|', '', desc_part, flags=re.IGNORECASE)
+            desc_part = re.sub(r'raw\.githubusercontent\.com\S*', '', desc_part)
+            desc_part = re.sub(r'Website=\S*', '', desc_part)
+            
+            # 2. Чистим лишние пробелы и символы
+            desc_part = desc_part.strip().lstrip('|').strip()
+            
+            # 3. Собираем в чистый вид GRAPHENE
+            new_line = f"{url_part.strip()}#🛡️ GRAPHENE | {desc_part}\n"
+            cleaned.append(new_line)
+        else:
+            # Если описания не было вообще
+            cleaned.append(f"{line}#🛡️ GRAPHENE\n")
+            
+    return cleaned
+
 def _extract_index(msg: str) -> int:
     """Пытается извлечь номер файла из строки вида 'githubmirror/12.txt'."""
     m = _GITHUBMIRROR_INDEX_RE.search(msg)
@@ -66,30 +95,6 @@ try:
         log(f"ℹ️ Доступно запросов к GitHub API: {remaining}/{limit}")
 except Exception as e:
     log(f"⚠️ Не удалось проверить лимиты GitHub API: {e}")
-
-import re
-
-def clean_and_brand(config_line):
-    if '#' in config_line:
-        # Разделяем на ссылку и описание
-        parts = config_line.split('#', 1)
-        url = parts[0]
-        desc = parts[1]
-
-        # 1. Удаляем упоминание openproxylist и старый бренд (если есть)
-        desc = re.sub(r'\[openproxylist\.com\]', '', desc)
-        desc = re.sub(r'🛡️\s?Graphene\s?\|', '', desc)
-        desc = re.sub(r'Website=.*', '', desc) # Чистим хвосты
-        
-        # 2. Убираем лишние пробелы
-        desc = desc.strip()
-        
-        # 3. Собираем обратно с твоим брендом
-        return f"{url}#🛡️ GRAPHENE VPN | {desc}\n"
-    return config_line
-
-if not os.path.exists("githubmirror"):
-    os.mkdir("githubmirror")
 
 URLS = [
     "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"
@@ -237,32 +242,7 @@ def extract_source_name(url: str) -> str:
         return parsed.netloc
     except:
         return "Источник"
-
-def save_mobile_version(all_configs):
-    # Берем с 1 по 25 сервер (самые свежие)
-    mobile_list = all_configs[:25]
-    
-    with open("githubmirror/mobile.txt", "w", encoding="utf-8") as f:
-        # Правильный заголовок для мобильных приложений
-        f.write("Profile-Title: 🛡️ GRAPHENE VPN\n")
-        f.write("Subscription-Userinfo: upload=0; download=0; total=107374182400; expire=1798761600\n")
-        f.write("Profile-Update-Interval: 6\n\n")
         
-        f.writelines(mobile_list)
-    print("📱 Мобильная версия Graphene создана (25 серверов)")
-
-# Предположим, all_configs — это твой список очищенных строк
-all_configs = process_configs(raw_data) 
-
-# Сохраняем полный список (26.txt)
-with open("githubmirror/26.txt", "w", encoding="utf-8") as f:
-    f.writelines(all_configs)
-
-# СОЗДАЕМ MOBILE.TXT (первые 20 серверов)
-with open("githubmirror/mobile.txt", "w", encoding="utf-8") as f:
-    f.write("Profile-Title: 🛡️ GRAPHENE MOBILE\n\n")
-    f.writelines(all_configs[:20]) # Берем только первые 20 штук
-
 def _traffic_counts(traffic) -> tuple[int, int]:
     """Извлекает count/uniques из разных форматов ответа GitHub API."""
     if traffic is None:
