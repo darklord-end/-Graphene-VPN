@@ -164,36 +164,6 @@ def get_premium_header(filename):
         f"Profile-Web-Page-Url: https://github.com/{REPO_NAME}\n\n"
     )
 
-
-def process_configs(raw_configs):
-    cleaned = []
-    for line in raw_configs:
-        line = line.strip()
-        if not line or "://" not in line: 
-            continue
-        
-        # Если в строке есть конфиг
-        if "#" in line:
-            url_part, desc_part = line.split("#", 1)
-            
-            # 1. Убираем мусор: openproxylist, старые бренды, ссылки raw.github
-            desc_part = re.sub(r'\[openproxylist\.com\]', '', desc_part, flags=re.IGNORECASE)
-            desc_part = re.sub(r'🛡️\s?Graphene\s?\|', '', desc_part, flags=re.IGNORECASE)
-            desc_part = re.sub(r'raw\.githubusercontent\.com\S*', '', desc_part)
-            desc_part = re.sub(r'Website=\S*', '', desc_part)
-            
-            # 2. Чистим лишние пробелы и символы
-            desc_part = desc_part.strip().lstrip('|').strip()
-            
-            # 3. Собираем в чистый вид GRAPHENE
-            new_line = f"{url_part.strip()}#🛡️ GRAPHENE | {desc_part}\n"
-            cleaned.append(new_line)
-        else:
-            # Если описания не было вообще
-            cleaned.append(f"{line}#🛡️ GRAPHENE\n")
-            
-    return cleaned
-
 def _format_fetch_error(exc: Exception) -> str:
     if isinstance(exc, requests.exceptions.ConnectTimeout):
         return "Connect timeout"
