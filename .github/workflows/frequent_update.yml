@@ -2,30 +2,36 @@ name: Frequent Update
 
 on:
   schedule:
-    - cron: "*/9 * * * *"
+    - cron: "*/9 * * * *" # Запуск каждые 9 минут — это довольно часто, будь осторожен с лимитами коммитов!
   workflow_dispatch:
 
 jobs:
   update-files:
     runs-on: ubuntu-latest
+    # ДОБАВЛЯЕМ ПРАВА НА ЗАПИСЬ
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Обновил до v4 (актуальная версия)
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Обновил до v5
         with:
-          python-version: 3.x
-
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip
+          python-version: '3.10'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: cd source && pip install --no-cache-dir -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          cd source && pip install --no-cache-dir -r requirements.txt
 
       - name: Run script
         env:
-          MY_TOKEN: ${{ secrets.MY_TOKEN }}
+          # ИСПОЛЬЗУЕМ СТАНДАРТНЫЙ ТОКЕН (он не требует настройки в Secrets)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Если твой код жестко завязан на имя MY_TOKEN, оставь и его:
+          MY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd source && python main.py
