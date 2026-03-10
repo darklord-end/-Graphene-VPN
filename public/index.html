@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphene VPN | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+            color: #e94560;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        .btn-graphene {
+            background: #e94560;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-graphene:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+            background: #ff4d6d;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-4">
+    <div class="glass max-w-lg w-full p-8 shadow-2xl">
+        <div class="text-center mb-8">
+            <div class="inline-block p-4 rounded-full bg-opacity-10 bg-white mb-4">
+                <i class="fas fa-shield-halved text-5xl"></i>
+            </div>
+            <h1 class="text-3xl font-bold tracking-wider text-white">GRAPHENE <span class="text-[#e94560]">VPN</span></h1>
+            <p class="text-gray-400 mt-2 text-sm uppercase tracking-widest">Secure & Private Subscription</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="glass p-4 text-center">
+                <span class="block text-xs text-gray-400 uppercase">Статус</span>
+                <span class="text-green-400 font-bold">ONLINE</span>
+            </div>
+            <div class="glass p-4 text-center">
+                <span class="block text-xs text-gray-400 uppercase">Тип</span>
+                <span class="text-white font-bold">V2RAY / RAW</span>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-xs text-gray-400 mb-2 ml-1 uppercase">Ваша ссылка на подписку:</label>
+            <div class="relative">
+                <input id="subUrl" type="text" readonly 
+                    value="https://raw.githubusercontent.com/{{ github.repository_owner }}/{{ github.event.repository.name }}/main/githubmirror/26.txt"
+                    class="w-full bg-black bg-opacity-40 border border-gray-700 rounded-lg p-3 pr-12 text-gray-300 text-sm focus:outline-none">
+                <button onclick="copyLink()" class="absolute right-2 top-2 p-2 text-[#e94560] hover:text-white transition-colors">
+                    <i class="far fa-copy text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <button onclick="copyLink()" class="btn-graphene w-full py-4 rounded-lg font-bold uppercase tracking-widest flex items-center justify-center">
+                <i class="fas fa-copy mr-2"></i> Скопировать подписку
+            </button>
+            <a href="v2rayng://install-config?url=https://raw.githubusercontent.com/{{ github.repository_owner }}/{{ github.event.repository.name }}/main/githubmirror/26.txt" 
+               class="block w-full text-center py-3 border border-gray-700 rounded-lg text-gray-400 hover:text-white hover:bg-white hover:bg-opacity-5 transition-all text-sm">
+               Импортировать в V2RayNG
+            </a>
+        </div>
+
+        <div class="mt-8 text-center text-xs text-gray-500">
+            &copy; 2026 Graphene Project. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        // Подставляем реальный URL репозитория
+        const currentUrl = window.location.href.replace('index.html', '');
+        const subPath = 'githubmirror/26.txt';
+        // Если ты используешь GitHub Pages, ссылка будет такой:
+        // document.getElementById('subUrl').value = window.location.origin + window.location.pathname + subPath;
+
+        function copyLink() {
+            const copyText = document.getElementById("subUrl");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            
+            const btn = event.currentTarget;
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check mr-2"></i> СКОПИРОВАНО!';
+            setTimeout(() => { btn.innerHTML = originalHtml; }, 2000);
+        }
+    </script>
+</body>
+</html>
