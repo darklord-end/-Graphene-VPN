@@ -16,11 +16,15 @@ PREM_FILE = f"{DIR}/premium.txt"
 SOURCES = ["https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt"]
 
 # Флаги и названия
+# Расширенная база: добавил Азию, Европу и СНГ
 GEO_DATA = {
     "DE": ("🇩🇪", "Germany"), "US": ("🇺🇸", "USA"), "FI": ("🇫🇮", "Finland"),
     "PL": ("🇵🇱", "Poland"), "NL": ("🇳🇱", "Netherlands"), "FR": ("🇫🇷", "France"),
     "GB": ("🇬🇧", "UK"), "TR": ("🇹🇷", "Turkey"), "KZ": ("🇰🇿", "Kazakhstan"),
-    "SG": ("🇸🇬", "Singapore"), "JP": ("🇯🇵", "Japan"), "UN": ("🌐", "Global")
+    "SG": ("🇸🇬", "Singapore"), "JP": ("🇯🇵", "Japan"), "HK": ("🇭🇰", "Hong Kong"),
+    "EE": ("🇪🇪", "Estonia"), "KR": ("🇰🇷", "Korea"), "CA": ("🇨🇦", "Canada"),
+    "AT": ("🇦🇹", "Austria"), "CH": ("🇨🇭", "Switzerland"), "UA": ("🇺🇦", "Ukraine"),
+    "ES": ("🇪🇸", "Spain"), "IT": ("🇮🇹", "Italy"), "UN": ("🌐", "Global")
 }
 
 class GrapheneEngine:
@@ -75,7 +79,7 @@ class GrapheneEngine:
 
         # Сборка Free
         with open(FREE_FILE, "w", encoding="utf-8") as f:
-            f.write(f"vless://0@0.0.0.0:0?encryption=none&security=none#{urllib.parse.quote('⬢ ПЛАН: FREE')}\n")
+            f.write(f"vless://0@0.0.0.0:0?encryption=none&security=none#{urllib.parse.quote('⬢ GRAPHENE VPN | ПЛАН: FREE')}\n")
             f.write(f"vless://0@0.0.0.0:0?encryption=none&security=none#{urllib.parse.quote('⬢ ПОДДЕРЖКА: @Graphene_Bot')}\n")
             for i, l in enumerate(free_nodes):
                 f.write(self.format_link(l, i+1, False) + "\n")
