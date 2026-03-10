@@ -1,4 +1,4 @@
-vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20%D0%9F%D0%9B%D0%90%D0%9D%3A%20FREE
+vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20VPN%20%7C%20%D0%9F%D0%9B%D0%90%D0%9D%3A%20FREE
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20%D0%9F%D0%9E%D0%94%D0%94%D0%95%D0%A0%D0%96%D0%9A%D0%90%3A%20%40Graphene_Bot
 ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@57.128.214.100:12000#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%7C%20Free
 vless://71322f86-f37a-4929-ada0-05e6a2688145@de2.pineappled.org:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&security=reality&sid=23&sni=www.apple.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20Free
@@ -8,12 +8,12 @@ vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGVkW29wZW5wcm94eWxpc3Qu
 vless://b3da836c-d6d8-03e8-ba4a-0a7a54491924@5.188.140.35:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
 vless://6ca2c654-53b3-4ac1-a2ef-c4b4ee88727a@kzcdn1.suio.me:443?security=tls&encryption=none&headerType=none&type=tcp&sni=kzcdn1.suio.me#%F0%9F%87%BA%F0%9F%87%B8%20USA%20%7C%20Free
 vless://6202b230-417c-4d8e-b624-0f71afa9c75d@152.70.76.104:46000?&security=tls&fp=chrome&sni=sni.111000.v6.navy&type=ws&headerType=none&host=sni.111000.v6.navy&path=/?ed=2560&Telegram🇨🇳#%F0%9F%8C%90%20Global%20%7C%20Free
-vless://a16bd0e2-ff2e-4e4c-a955-0c684255a065@es.fasti.win:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs&security=reality&sid=feedbacc&sni=es.fasti.win&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
-ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@144.217.164.29:12000#%F0%9F%8C%90%20Global%20%7C%20Free
+vless://a16bd0e2-ff2e-4e4c-a955-0c684255a065@es.fasti.win:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs&security=reality&sid=feedbacc&sni=es.fasti.win&type=tcp#%F0%9F%87%AA%F0%9F%87%B8%20Spain%20%7C%20Free
+ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@144.217.164.29:12000#%F0%9F%87%A8%F0%9F%87%A6%20Canada%20%7C%20Free
 vless://4fd2d5f6-d417-03e8-9331-e20afde2fcd2@109.120.189.86:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
 vless://4fd2d5f6-d417-03e8-9331-e20afde2fcd2@109.120.189.223:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
 vless://b3da836c-d6d8-03e8-ba4a-0a7a54491924@5.188.140.35:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
-ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@144.217.164.29:12000#%F0%9F%8C%90%20Global%20%7C%20Free
+ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@144.217.164.29:12000#%F0%9F%87%A8%F0%9F%87%A6%20Canada%20%7C%20Free
 vless://b3da836c-d6d8-03e8-ba4a-0a7a54491924@5.188.140.35:52006?security=reality&encryption=none&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Global%20%7C%20Free
 vless://4fd2d5f6-d417-03e8-9331-e20afde2fcd2@109.120.189.86:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#%F0%9F%8C%90%20Global%20%7C%20Free
 vless://7a1f4deb-0ea9-427e-bc9d-9297a08afa12@dee1.shubnechkin.online:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=nBxkzpHPJpW3AXzEZSQc8V00RuPj1zrxe-hYSgNtzUY&security=reality&sid=b7&sni=vk.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20Free
