@@ -2,8 +2,8 @@ name: Graphene VPN Sync
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Раз в 6 часов
-  workflow_dispatch: # Кнопка ручного запуска
+    - cron: '0 */6 * * *' 
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -21,10 +21,15 @@ jobs:
         run: pip install requests
 
       - name: Run Graphene Engine
-        run: python main.py
+        # Запускаем из корня, но указываем путь к файлу в папке source
+        run: python source/main.py
 
       - name: Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config --global user.name "GrapheneBot"
+          git config --global user.email "bot@graphene.vpn"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "🚀 Graphene VPN: Safe Update"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
