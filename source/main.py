@@ -71,11 +71,7 @@ if not os.path.exists("githubmirror"):
     os.mkdir("githubmirror")
 
 URLS = [
-    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt", # Глобал база
-    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/vless_txt.txt", # Vless
-    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/reality_txt.txt", # Reality (Топ для РФ)
-    # Добавь сюда свой немецкий сервер прямой ссылкой:
-    "vless://b3da836c-d6d8-03e8-ba4a-0a7a54491924@5.188.140.35:52006?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&security=reality&sid=d8c6b58bcbb0c323&sni=max.ru&type=tcp#🇩🇪 Graphene VIP | Germany #1"
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY.txt"
 ]
 
 # Источники для 26-го файла (без SNI проверки, только дедупликация)
