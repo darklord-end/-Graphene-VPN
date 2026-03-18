@@ -1,5 +1,5 @@
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20ULTRA%20PREMIUM%20%F0%9F%92%8E%20%E2%AC%A2
-vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2018.03%2022%3A03
+vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2018.03%2023%3A04
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%98%D0%BD%D1%84%D0%BE%3A%20%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%20%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%84%D1%82
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81%3A%20%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%9C%85
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%3A%20%40Graphene_Bot
@@ -71,7 +71,6 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKT1o1TWIzbkpDbW1vS2hkOENjOWFD@5.181.2.76:366
 vless://94daa8ad-75ed-4dbf-a6de-d05036d98df5@162.159.36.5:443?allowInsecure=1&encryption=none&host=vangoghhh.info&path=%2Ftixvuws&security=tls&sni=vangoghhh.info&type=ws#%E2%AC%A2%20Graphene%20%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%28100%29%20%5BPremium%5D
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBVkxiRVVFdEJENTlGc1JxY055RWli@203.202.232.78:60299#%E2%AC%A2%20Graphene%20%F0%9F%87%B9%F0%9F%87%B7%5Bopenproxylist.com%5D%20%7C%20Server%20%28101%29%20%5BPremium%5D
 trojan://86e150eb21c6faee48e81d496d7f61c2@160.16.106.99:2001?allowInsecure=0&sni=www.nintendogames.net#%E2%AC%A2%20Graphene%20%F0%9F%87%AF%F0%9F%87%B5%5Bopenproxylist.com%5D%20%7C%20Server%20%28102%29%20%5BPremium%5D
-trojan://13c169be-8592-4eaa-94cb-69c859e7d987@ubu.okaoclax.me:443?path=/trojan-ws&security=tls&host=ubu.okaoclax.me&type=ws&sni=ubu.okaoclax.me#%E2%AC%A2%20Graphene%20%F0%9F%87%B8%F0%9F%87%AC%5Bopenproxylist.com%5D%20%7C%20Server%20%28103%29%20%5BPremium%5D
 vless://a02e0f63-d96e-4b0f-8270-56c28caef171@51.158.151.24:31727?security=none&encryption=none&headerType=none&type=tcp#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%28104%29%20%5BPremium%5D
 vless://87580984-c2ef-4f44-9c7e-0b216f99aa87@93.94.51.19:56864?encryption=none&fp=chrome&pbk=AIt19ZFk_JxCvW7OOwUn4mhE_1alZJlNj-xnQOpPZCI&security=reality&sid=2e3c82922ef98049&sni=yandex.ru&type=tcp#%E2%AC%A2%20Graphene%20%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%28105%29%20%5BPremium%5D
 vless://e8fb0f43-3497-4ef3-8a89-35bae56549b7@93.94.51.8:13380?security=reality&encryption=none&pbk=JitkQnVQffSjGpth1UKvZP4yLX6HmcshmClfzbC70T4&headerType=none&fp=chrome&spx=/&type=tcp&sni=yandex.ru&sid=99de062f46387d3e#%E2%AC%A2%20Graphene%20%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%28106%29%20%5BPremium%5D
