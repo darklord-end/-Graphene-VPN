@@ -1,5 +1,5 @@
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20ULTRA%20PREMIUM%20%F0%9F%92%8E%20%E2%AC%A2
-vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2020.03%2022%3A41
+vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2020.03%2023%3A03
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%98%D0%BD%D1%84%D0%BE%3A%20%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%20%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%84%D1%82
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81%3A%20%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%9C%85
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%3A%20%40Graphene_Bot
@@ -38,7 +38,6 @@ vless://d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa@157.254.223.44:18959?&security=real
 vless://e73df646-1f62-41bf-8c50-653497d603d0@163.172.213.174:80?encryption=none&path=%2Fvless%2F&security=none&type=ws#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2864%29%20%5BPremium%5D
 vless://40cc9b52-25b8-4cd5-8b45-715ae26e6baf@SC-TheNetherlands1.09vpn.com:80?path=/vless/&security=none&encryption=none&type=ws#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2865%29%20%5BPremium%5D
 vless://12eac926-c4ec-4040-8fb8-f316e9fc0fd6@fra01.jumperservice.com:19001?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4&security=reality&sni=www.speedtest.net&type=tcp#%E2%AC%A2%20Graphene%20%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%2866%29%20%5BPremium%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@45.61.140.116:443?encryption=none&security=tls&sni=zgtwylnhh.cc.cd&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=zgtwylnhh.cc.cd&path=Telegram🇨🇳@WangCai2#%E2%AC%A2%20Graphene%20%F0%9F%87%BA%F0%9F%87%B8%5Bopenproxylist.com%5D%20%7C%20Server%20%2867%29%20%5BPremium%5D
 trojan://ZY07256934@free-duckling.rooster465.autos:443?security=tls#%E2%AC%A2%20Graphene%20%F0%9F%87%B8%F0%9F%87%AC%5Bopenproxylist.com%5D%20%7C%20Server%20%2868%29%20%5BPremium%5D
 trojan://ZY07256934@delicate-buck.rooster465.autos:443?security=tls#%E2%AC%A2%20Graphene%20%F0%9F%87%B8%F0%9F%87%AC%5Bopenproxylist.com%5D%20%7C%20Server%20%2869%29%20%5BPremium%5D
 vless://9caafed4-04ba-41b2-9c64-e4ce39a985d6@s1.eldoradu.ir:2053?allowInsecure=1&encryption=none&host=fz3.sellink.ir&path=%2F&security=tls&sni=fz3.sellink.ir&type=ws#%E2%AC%A2%20Graphene%20%F0%9F%87%A8%F0%9F%87%AD%5Bopenproxylist.com%5D%20%7C%20Server%20%2870%29%20%5BPremium%5D
