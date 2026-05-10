@@ -1,5 +1,5 @@
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20%7C%20%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%20%E2%AC%A2
-vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2010.05%2022%3A53
+vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2010.05%2023%3A56
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%98%D0%BD%D1%84%D0%BE%3A%20%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%20%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%84%D1%82
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81%3A%20%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%9C%85
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%3A%20%40Graphene_Bot
@@ -27,5 +27,5 @@ vless://4fe2b7d6-cdc0-44f3-8093-3a1fc92e8542@95.164.3.121:20089?encryption=none&
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.131:8080#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2822%29%20%5BFree%5D
 trojan://7aXwJPnpAJ@yespaintstudio.rav-kraski.ru:50824?security=tls&sni=yespaintstudio.rav-kraski.ru&insecure=0&allowInsecure=0&type=tcp&headerType=none#%E2%AC%A2%20Graphene%20%F0%9F%87%B8%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%2823%29%20%5BFree%5D
 vless://f2a806c6-f36b-4cd9-8bb6-7addb218ad2d@91.244.70.205:443?encryption=none&path=%2F&security=none&type=ws#%E2%AC%A2%20Graphene%20%F0%9F%87%A6%F0%9F%87%B9%5Bopenproxylist.com%5D%20%7C%20Server%20%2825%29%20%5BFree%5D
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.134:8080#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2826%29%20%5BPremium%5D
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.135:8080#%E2%AC%A2%20Graphene%20%F0%9F%87%B3%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2826%29%20%5BPremium%5D
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFWnBkbzc2RjExRlNVUldES214UXdB@130.51.22.40:2096#%E2%AC%A2%20Graphene%20%F0%9F%87%BA%F0%9F%87%B8%5Bopenproxylist.com%5D%20%7C%20Server%20%2827%29%20%5BPremium%5D
