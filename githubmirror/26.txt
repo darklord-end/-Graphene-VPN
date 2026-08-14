@@ -1,10 +1,11 @@
 vless://0@0.0.0.0:0?encryption=none&security=none#%E2%AC%A2%20GRAPHENE%20%7C%20%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%20%E2%AC%A2
-vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2014.08%2017%3A39
+vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE%3A%2014.08%2018%3A33
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%98%D0%BD%D1%84%D0%BE%3A%20%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9%D1%82%D0%B5%20%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D1%84%D1%82
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81%3A%20%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%9C%85
 vless://0@0.0.0.0:0?encryption=none&security=none#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%3A%20%40Graphene_Bot
 vless://0@0.0.0.0:0?encryption=none&security=none#--------------------------------
 vless://9f61cdf4-810d-4052-bbc7-2da0c8e20104@83.147.18.3:443?type=tcp&amp;headerType=none&amp;security=reality&amp;encryption=none&amp;sni=www.cloudflare.com&amp;fp=chrome&amp;pbk=3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA&amp;sid=fd8cf7e1173f0edb&amp;flow=xtls-rprx-vision#%E2%AC%A2%20Graphene%20%F0%9F%87%AC%F0%9F%87%A7%5Bopenproxylist.com%5D%20%7C%20Server%20%2801%29%20%5BFree%5D
+vless://e2b8f727-c5ee-47e1-8f1b-7c5c61479ce0@45.90.56.231:443?type=tcp&amp;headerType=none&amp;security=reality&amp;encryption=none&amp;sni=www.cloudflare.com&amp;fp=chrome&amp;pbk=KrFnWxAwVGL6tuj1JE0qpykLzY4aOFjyK3OaymF_hT0&amp;sid=e2e66f4537770cef&amp;flow=xtls-rprx-vision#%E2%AC%A2%20Graphene%20%F0%9F%8F%B3%5Bopenproxylist.com%5D%20%7C%20Server%20%2802%29%20%5BFree%5D
 trojan://FH72359861@square-tortoise.rooster465.autos:443?allowInsecure=0#%E2%AC%A2%20Graphene%20%F0%9F%87%AF%F0%9F%87%B5%5Bopenproxylist.com%5D%20%7C%20Server%20%2803%29%20%5BFree%5D
 trojan://FH72359861@fond-chipmunk.rooster465.autos:443?allowInsecure=0#%E2%AC%A2%20Graphene%20%F0%9F%8F%B3%5Bopenproxylist.com%5D%20%7C%20Server%20%2804%29%20%5BFree%5D
 trojan://FH72359861@fit-marten.rooster465.autos:443?allowInsecure=0#%E2%AC%A2%20Graphene%20%F0%9F%8F%B3%5Bopenproxylist.com%5D%20%7C%20Server%20%2805%29%20%5BFree%5D
@@ -24,7 +25,6 @@ trojan://AE62539071@52.68.175.30:443?security=tls&sni=on-roughy.rooster465.autos
 trojan://AE62539071@exciting-grizzly.rooster465.autos:443?security=tls&sni=exciting-grizzly.rooster465.autos#%E2%AC%A2%20Graphene%20%F0%9F%87%AF%F0%9F%87%B5%5Bopenproxylist.com%5D%20%7C%20Server%20%2819%29%20%5BFree%5D
 trojan://AE62539071@54.95.128.248:443?security=tls&sni=engaged-ram.rooster465.autos#%E2%AC%A2%20Graphene%20%F0%9F%87%AF%F0%9F%87%B5%5Bopenproxylist.com%5D%20%7C%20Server%20%2820%29%20%5BFree%5D
 vless://5e7ecc47-e424-4653-876e-c7515a2c82b4@pl4.lckdwn.ru:443?&type=ws&headerType=none&host=pl4.lckdwn.ru&path=%2F#%E2%AC%A2%20Graphene%20%F0%9F%87%B5%F0%9F%87%B1%5Bopenproxylist.com%5D%20%7C%20Server%20%2823%29%20%5BFree%5D
-vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@92.5.239.29:62145?&type=tcp&headerType=none&path=%2F#%E2%AC%A2%20Graphene%20%F0%9F%8F%B3%5Bopenproxylist.com%5D%20%7C%20Server%20%2825%29%20%5BFree%5D
 vless://dbe453d8-112d-4bad-b353-3ccf60044a23@164.90.191.172:47260?&type=tcp&headerType=none&path=%2F#%E2%AC%A2%20Graphene%20%F0%9F%87%A9%F0%9F%87%AA%5Bopenproxylist.com%5D%20%7C%20Server%20%2826%29%20%5BPremium%5D
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.210.4:62145?&type=tcp&headerType=none&path=%2F#%E2%AC%A2%20Graphene%20%F0%9F%87%A8%F0%9F%87%B4%5Bopenproxylist.com%5D%20%7C%20Server%20%2827%29%20%5BPremium%5D
 vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@149.130.182.124:62145?&type=tcp&headerType=none&path=%2F#%E2%AC%A2%20Graphene%20%F0%9F%8F%B3%5Bopenproxylist.com%5D%20%7C%20Server%20%2828%29%20%5BPremium%5D
